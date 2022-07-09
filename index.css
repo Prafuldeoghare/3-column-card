@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 800px;
+  display: flex;
+}
+
+.card {
+  width: 250px;
+  height: auto;
+  background-color: hsl(31, 77%, 52%);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 20px 30px;
+  border-radius: 10px 0px 0px 10px;
+  align-items: flex-start;
+}
+
+.sv {
+  background-color: hsl(184, 100%, 22%);
+  border-radius: 0px;
+}
+
+.sv .button-wrapper button {
+  color: hsl(184, 100%, 22%);
+}
+
+.lu {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.lu .button-wrapper button {
+  color: hsl(179, 100%, 13%);
+}
+
+.title h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 15px 0px;
+  text-transform: uppercase;
+}
+
+.des p,
+.button-wrapper button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.des {
+  margin: 0px 0px 20px 0px;
+  padding-right: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.8rem;
+}
+
+.des p {
+  line-height: 21.5px;
+  word-spacing: 2px;
+}
+
+.button-wrapper {
+  margin: 30px 0px 20px 0px;
+}
+
+.button-wrapper button {
+  width: 130px;
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  border-radius: 20px;
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.button-wrapper button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 250px;
+  }
+  .se {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .lu {
+    border-radius: 0px 0px 5px 5px;
+  }
+}
